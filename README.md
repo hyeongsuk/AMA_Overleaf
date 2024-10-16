@@ -1,2 +1,2 @@
 # AMA_Overleaf
-American Medical Association manual of style with LATEX. Using for the paper in SCI journal related to the medical.
+The file is the American Medical Association (AMA) Overleaf (LATEX) style applied to medical-related SCI journals. You can check the entire style written using "main.tex" in the folder.

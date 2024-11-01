@@ -1,0 +1,104 @@
+\documentclass[preprint,12pt]{elsarticle_v2} % article class, 12pt font
+
+\journal{OPHTHALMOLOGY}
+
+% load any packages you need for more custom stuff
+\usepackage{amssymb}
+\usepackage[margin=1in]{geometry} % set 1-inch margins
+\usepackage{setspace}\doublespacing % set double spacing
+\usepackage[superscript]{cite} % superscript numeric in-line citations
+\usepackage{indentfirst} % indent the first paragraph of each section
+\usepackage{graphicx}
+\usepackage{times}
+\usepackage[outdir=./]{epstopdf}% \usepackage[outdir=./]{epstopdf}
+\usepackage{booktabs}
+\usepackage{url,hyperref,lineno,microtype,subcaption}
+\usepackage{tabularx}
+\usepackage{booktabs}
+\usepackage{array}
+\usepackage{tabularx}
+\usepackage{multirow}
+\usepackage{kotex}
+\usepackage{fancyhdr} % For custom headers and footers
+\usepackage{lineno}
+
+%%% CSL - Add
+%\usepackage{gensymb}
+\hbadness=99999  % or any number >=10000
+\vbadness=99999  % or any number >=10000
+%\hfuzz=20pt
+%\usepackage[onehalfspacing]{setspace}
+
+
+% start the actual document
+\begin{document}
+
+% \linenumbers
+
+% create title stuff
+
+\begin{frontmatter}
+
+\title{xx}
+
+\author[1]{XX}
+\author[2]{XX}
+\author[3]{XX}
+\author[1,3]{XX\texorpdfstring{\corref{cor1}}}
+\ead{XX@XX.com}
+
+\address[1]{Department of XX, XX, Seoul, South Korea}
+\address[2]{Department of XX, XX, Seoul, South Korea}
+\address[3]{XX Inc, Seoul, South Korea}
+\cortext[cor1,3]{Corresponding author}
+
+
+\begin{abstract}
+\textbf{Purpose:} HERE\\
+\textbf{Design:} HERE\\
+\textbf{Subjects:} HERE\\
+\textbf{Main Outcome Measures:} HERE\\
+\textbf{Results:} HERE NN $\pm$ NN, AND (p$<$.001).\\
+\textbf{Conslusion:} HERE.
+%\textbf{Financial Disclosure(s):}
+\end{abstract}
+
+
+\begin{keyword}
+%% keywords here, in the form: keyword \sep keyword
+Intermittent Exotropia \sep Improving stereopsis vision 
+\end{keyword}
+
+
+\end{frontmatter}
+
+\section*{Conflicts of Interest}
+\noindent The authors declare no potential conclict of interests.
+
+\section*{Funding}
+%This study was supported by a grant of the Korea Health Technology R\&D project through the Korea Health Industry Development Institute (KHIDI), funded by the Ministry of Health \& Welfare, Republic of Korea (No. HR18C0016).
+\noindent This study was supported by a grant of the XX (No. NN).
+
+% begin the main text
+\section{Introduction}
+\input{Chapters/Introduction}
+
+\section{Methods}
+\input{Chapters/Methods}
+
+\section{Results}
+\input{Chapters/Results}
+
+\section{Discussion}
+\input{Chapters/Discussion}
+
+\section{Conclusion}
+\input{Chapters/Conclusions}
+
+% create bibliography
+\bibliographystyle{ama} % load Niema's AMA bibliography style (ama.bst)
+\bibliography{references.bib} % load references.bib for citations
+
+% \nolinenumbers
+
+\end{document} % this ends your document
